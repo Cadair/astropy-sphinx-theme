@@ -1,5 +1,7 @@
 # Changelog
 
+For later releases, please see https://github.com/astropy/astropy-sphinx-theme/releases
+
 ## 2.0 (2025-03-18)
 
 - Infrastructure updates. Minimum Python version is now 3.7. [#27]
