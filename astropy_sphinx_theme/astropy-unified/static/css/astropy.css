@@ -26,8 +26,8 @@ html[data-theme="light"] {
   --pst-color-secondary-highlight-text: #ffffff;
 
   --pst-color-inline-code: #912583;
-  --pst-color-inline-code-links: #2e6da4;
-  --pst-color-link-higher-contrast: #2e6da4;
+  --pst-color-inline-code-links: var(--pst-color-link);
+  --pst-color-link-higher-contrast: var(--pst-color-link);
 
   --pst-color-target: #f3cf95;
 
@@ -80,7 +80,7 @@ html .pst-navbar-icon:hover {
 
 /* Selected theme in the light/dark mode dropdown */
 html[data-theme="light"] .theme-switch-button + .dropdown-menu {
-  --bs-dropdown-link-active-color: #5b9fd6;
+  --bs-dropdown-link-active-color: var(--pst-color-link);
 }
 
 /* Vertical sidebar/content separator */
@@ -112,7 +112,7 @@ html[data-theme="dark"] .bd-footer {
 
 /* Muted slate blue for general admonitions (note, important, etc.) */
 html[data-theme="dark"] .admonition {
-  border-color: #2e6da4;
+  border-color: var(--pst-color-link);
 }
 html[data-theme="dark"] .admonition > .admonition-title {
   background-color: #1c4378;
