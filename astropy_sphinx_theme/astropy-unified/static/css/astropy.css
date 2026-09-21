@@ -60,22 +60,33 @@ html[data-theme="dark"] {
 /* =========================================================================
    Header / Navigation
    ========================================================================= */
-
+/* Ensure header bar hover color doesn't use blue links*/
 .bd-header a.navbar-brand {
-  color: #ff8457 !important;
+  color: var(--sst-accent-color-muted);
 }
 
+.navbar-brand:hover,
+.navbar-brand:visited:hover {
+  color: var(--sst-accent-color-muted);
+}
+
+.bd-header ul.navbar-nav > li.nav-item.dropdown > .dropdown-toggle:hover {
+  color: var(--sst-accent-color-muted);
+}
 .bd-header ul.navbar-nav > li.nav-item > .nav-link:hover {
-  color: var(--sst-accent-color-bright) !important;
+  color: var(--sst-accent-color-muted);
 }
 
-.bd-header ul.navbar-nav > li.nav-item > .nav-link:hover:before {
-  border-bottom-color: var(--sst-accent-color-bright) !important;
+.concertina-toggle.dropdown-item:hover,
+.navbar-nav .concertina-toggle:hover,
+.bd-header .dropdown-item:hover,
+.bd-header .concertina-toggle:hover {
+  color: var(--sst-accent-color-muted);
 }
 
-/* Theme toggle and GitHub icon hover color */
-html .pst-navbar-icon:hover {
-  color: #ff9a6c !important;
+.dropdown-item.active,
+.dropdown-item:active {
+  color: var(--sst-accent-color-muted);
 }
 
 /* Selected theme in the light/dark mode dropdown */
