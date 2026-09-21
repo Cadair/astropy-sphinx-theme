@@ -73,6 +73,7 @@ html[data-theme="dark"] {
 .bd-header ul.navbar-nav > li.nav-item.dropdown > .dropdown-toggle:hover {
   color: var(--sst-accent-color-muted);
 }
+
 .bd-header ul.navbar-nav > li.nav-item > .nav-link:hover {
   color: var(--sst-accent-color-muted);
 }
